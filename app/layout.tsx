@@ -1,5 +1,15 @@
 import '@/app/ui/global.css';
 import { inter } from './ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s | Sujin's Dashboard",
+    default: `Sujin's Dashboard`,
+  },
+  description: `The sujin's dashboard. Built with App router.`,
+  metadataBase: new URL(`https://next-learn-dashboard.vercel.sh`),
+};
 
 export default function RootLayout({
   children,
